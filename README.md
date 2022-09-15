@@ -4,12 +4,10 @@
 
 * Vite
 * React
-
 * Typescript
 * Redux Toolkit
-
 * Chakra UI
 * Eslint
-
 * Prettier
 * React Router v6
+* Axios

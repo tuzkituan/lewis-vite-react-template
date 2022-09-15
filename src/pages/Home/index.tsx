@@ -2,8 +2,6 @@ import { useState } from 'react';
 
 import { Box, Button, Center, Flex, Image, Text } from '@chakra-ui/react';
 
-import reactLogo from '@/assets/react.svg';
-
 function Home() {
   const [count, setCount] = useState(0);
 
@@ -22,7 +20,7 @@ function Home() {
           </a>
           <a href="https://reactjs.org" target="_blank" rel="noreferrer">
             <Image
-              src={reactLogo}
+              src="./react.svg"
               className="logo react"
               alt="React logo"
               w="10vw"
@@ -30,7 +28,8 @@ function Home() {
           </a>
         </Center>
         <Text fontWeight="bold">
-          Vite + React + Chakra UI + React Router v6 + Redux Toolkit + Eslint
+          Vite + React + Typescript + Chakra UI + React Router v6 + Redux
+          Toolkit + Eslint + Axios
         </Text>
         <Center>
           <Button
