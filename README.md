@@ -13,4 +13,6 @@
 >* Axios
 
 Quick clone: 
-> npx degit tuzkituan/lewis-vite-react-template myapp
+```
+npx degit tuzkituan/lewis-vite-react-template myapp
+```
