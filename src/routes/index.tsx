@@ -1,6 +1,6 @@
+import Home from 'pages/Home';
+import NotFound from 'pages/NotFound';
 import { useRoutes } from 'react-router-dom';
-
-import Home from '@/pages/Home';
 
 export default function Routes() {
   return useRoutes([
@@ -11,6 +11,10 @@ export default function Routes() {
     {
       path: '/about',
       element: <div />,
+    },
+    {
+      path: '*',
+      element: <NotFound />,
     },
   ]);
 }
