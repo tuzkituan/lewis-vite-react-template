@@ -1,4 +1,15 @@
-# lewis-vite-react-template
-My Vite React template
+# Vite React Template 👻
 
-Vite + React + Typescript + Redux Toolkit + Chakra UI + Eslint + Prettier + React Router v6
+**My Vite React template**
+
+* Vite
+* React
+
+* Typescript
+* Redux Toolkit
+
+* Chakra UI
+* Eslint
+
+* Prettier
+* React Router v6

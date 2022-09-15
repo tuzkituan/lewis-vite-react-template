@@ -1,6 +1,10 @@
 {
   "name": "lewis-vite-react-template",
   "private": true,
+  "author": {
+    "name": "Lewis Nguyen",
+    "email": "tuannguyenitpy@gmail.com"
+  },
   "version": "0.0.0",
   "type": "module",
   "scripts": {

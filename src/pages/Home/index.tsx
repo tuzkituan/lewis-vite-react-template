@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import { Box, Button, Center, Flex, Image, Text } from '@chakra-ui/react';
 
-import reactLogo from '../../assets/react.svg';
+import reactLogo from '@/assets/react.svg';
 
 function Home() {
   const [count, setCount] = useState(0);

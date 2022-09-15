@@ -1,5 +1,6 @@
-import ThemeToggleButton from 'components/ThemeToggleButton';
-import Routes from 'routes';
+import Routes from '@/routes';
+
+import ThemeToggleButton from './components/ThemeToggleButton';
 
 function App() {
   return (
