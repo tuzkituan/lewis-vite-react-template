@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-import { Box, Center, Flex, Text } from '@chakra-ui/react';
+import { Box, Button, Center, Flex, Text } from '@chakra-ui/react';
 
 const NotFound = () => (
   <Box w="100%" h="100vh" p={6}>
@@ -21,15 +21,15 @@ const NotFound = () => (
       </Center>
       <Center>
         <Link to="/">
-          <Text
+          <Button
             fontSize={12}
             textTransform="uppercase"
-            fontWeight={500}
+            fontWeight={700}
             letterSpacing={1.2}
-            color="cyan"
+            colorScheme="brand"
           >
             Return home
-          </Text>
+          </Button>
         </Link>
         <Center />
       </Center>

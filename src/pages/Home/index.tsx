@@ -37,7 +37,7 @@ const Home = () => {
         </Text>
         <Center>
           <Button
-            colorScheme="cyan"
+            colorScheme="brand"
             onClick={() => setCount((prevCount) => prevCount + 1)}
           >
             count is {count}
