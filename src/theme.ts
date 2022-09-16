@@ -1,5 +1,4 @@
-import { theme } from '@chakra-ui/pro-theme';
-import { extendTheme } from '@chakra-ui/react';
+import { extendTheme, theme } from '@chakra-ui/react';
 
 import '@fontsource/inter'; // yarn add @fontsource/inter
 
