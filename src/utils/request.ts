@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const create = () => {
-  const BASE_API = import.meta.env.BASE_URL;
+  const BASE_API = import.meta.env.VITE_BASE_URL;
 
   //   const token = window.localStorage.getItem('token');
   try {
