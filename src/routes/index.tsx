@@ -2,8 +2,8 @@ import Home from 'pages/Home';
 import NotFound from 'pages/NotFound';
 import { useRoutes } from 'react-router-dom';
 
-export default function Routes() {
-  return useRoutes([
+const Routes = () =>
+  useRoutes([
     {
       path: '/',
       element: <Home />,
@@ -17,4 +17,5 @@ export default function Routes() {
       element: <NotFound />,
     },
   ]);
-}
+
+export default Routes;

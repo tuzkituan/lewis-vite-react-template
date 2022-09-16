@@ -9,23 +9,19 @@ import { ChakraProvider } from '@chakra-ui/react';
 import App from './App';
 import theme from './theme';
 
-function AppWrapper() {
-  return (
-    <Provider store={store}>
-      <MainApp />
-    </Provider>
-  );
-}
+const AppWrapper = () => (
+  <Provider store={store}>
+    <MainApp />
+  </Provider>
+);
 
-function MainApp() {
-  return (
-    <ChakraProvider theme={theme}>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
-    </ChakraProvider>
-  );
-}
+const MainApp = () => (
+  <ChakraProvider theme={theme}>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </ChakraProvider>
+);
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
