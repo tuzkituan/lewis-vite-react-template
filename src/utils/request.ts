@@ -1,5 +1,9 @@
 import axios from 'axios';
 
+import { createStandaloneToast } from '@chakra-ui/react';
+
+const { toast } = createStandaloneToast();
+
 const create = () => {
   const BASE_API = import.meta.env.VITE_BASE_URL;
 
@@ -20,17 +24,27 @@ const create = () => {
 };
 
 const checkError = (error: any) => {
-  if (error?.response?.data) {
-    console.log('🚀  ~ error?.response?.data', error?.response?.data);
-    // toast(error.response.data.message)
+  const {
+    response: { status = 0, data: { message = '', statusCode = 0 } = {} } = {},
+  } = error;
+
+  toast({
+    title: message,
+    status: 'error',
+    position: 'bottom-right',
+  });
+
+  // no auth, logout
+  if (status === 401) {
+    // logout here
   }
 };
 
 const callAPI = {
-  get: async (route: string) => {
+  get: async (route: string, params: Record<string, unknown>) => {
     try {
       const client = create();
-      const { data } = await client.get(route);
+      const { data } = await client.get(route, params);
       return data;
     } catch (error: any) {
       checkError(error);

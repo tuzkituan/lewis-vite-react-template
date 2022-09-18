@@ -39,6 +39,10 @@
     }
   },
   "rules": {
+    "react/require-default-props": "off",
+    "import/no-cycle": "off",
+    "no-underscore-dangle": "off",
+    "no-param-reassign": "off",
     "no-use-before-define": "off",
     "react/react-in-jsx-scope": "off",
     "react/jsx-filename-extension": ["warn", { "extensions": [".tsx"] }],

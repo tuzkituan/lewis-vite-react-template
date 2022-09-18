@@ -1,18 +1,27 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import { store } from 'store';
 
-import { ChakraProvider } from '@chakra-ui/react';
+import { ChakraProvider, createStandaloneToast } from '@chakra-ui/react';
 
 import App from './App';
 import theme from './theme';
 
+const { ToastContainer } = createStandaloneToast();
+
+/* 
+  to use toast outside components, 
+  const { toast } = createStandaloneToast(); 
+*/
+
 const AppWrapper = () => (
-  <Provider store={store}>
-    <MainApp />
-  </Provider>
+  <>
+    <ToastContainer />
+    <Provider store={store}>
+      <MainApp />
+    </Provider>
+  </>
 );
 
 const MainApp = () => (
@@ -24,7 +33,5 @@ const MainApp = () => (
 );
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-  <React.StrictMode>
-    <AppWrapper />
-  </React.StrictMode>
+  <AppWrapper />
 );
